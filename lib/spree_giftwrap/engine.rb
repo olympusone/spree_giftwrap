@@ -9,6 +9,13 @@ module SpreeGiftwrap
       g.test_framework :rspec
     end
 
+    config.after_initialize do
+      Spree::PermittedAttributes.store_attributes << :preferred_giftwrap_cost
+      Spree::PermittedAttributes.line_item_attributes << :giftwrap
+
+      config.spree.line_item_comparison_hooks.add 'compare_line_item_giftwrap'
+    end
+
     initializer 'spree_giftwrap.environment', before: :load_config_initializers do |_app|
       SpreeGiftwrap::Config = SpreeGiftwrap::Configuration.new
     end

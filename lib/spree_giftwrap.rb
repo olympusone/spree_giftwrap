@@ -1,4 +1,6 @@
 require 'spree_core'
+require 'spree_api'
+require 'spree_backend'
 require 'spree_extension'
 require 'spree_giftwrap/engine'
 require 'spree_giftwrap/version'

@@ -1,0 +1,7 @@
+<!-- insert_bottom '.line-item .line-item-name' -->
+
+<% if item.giftwrap? %>
+    <div>
+        (<%= Spree.t(:giftwrap) %>)
+    </div>
+<% end %>

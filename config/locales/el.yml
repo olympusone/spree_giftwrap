@@ -1,0 +1,9 @@
+el:
+  activerecord:
+    attributes:
+      spree/line_item:
+        giftwrap: Συσκευασία Δώρου
+  spree:
+    giftwrap: Συσκευασία Δώρου
+    giftwrap_adjustment: "Συσκευασία Δώρου x %{count} (%{name})"
+    giftwrap_cost: Χρέωση Συσκευασίας Δώρου

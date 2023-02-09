@@ -1,0 +1,7 @@
+<!-- insert_after '.purchase_item--additional' -->
+    
+<% if line_item.giftwrap? %>
+    <div class="purchase_item--additional">
+        (<%= Spree.t(:giftwrap) %>)
+    </div>
+<% end %>
